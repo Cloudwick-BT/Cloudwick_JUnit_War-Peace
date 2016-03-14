@@ -20,5 +20,12 @@ public class WordCountTestClass {
 		FileReader file = test.inputFile("F:/Cloudwick/java_Cloudwick/gutenberg/war&peace.txt");
 		assertNotNull(file);
 	}
+	
+	@Test
+	public void testInputNull(){
+		WordCount test = new WordCount();
+		FileReader file = test.inputFile("F:/Cloudwick/java_Cloudwick/gutenberg/war&peace.txt");
+		assertNull(file);
+	}
 
 }
